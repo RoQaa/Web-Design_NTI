@@ -3,14 +3,86 @@
     font-weight: 500 !important;
 }
 
-/* body{
-    background-color: black;
-} */
+body {
+    width: 100%;
+}
+
 .navbar {
     position: sticky;
     top: 0;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    margin-left: 16px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    transition: all 0.2s ease-in;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #3192FF !important;
+}
+
+.active {
+    color: #3192FF !important;
+    position: relative;
+}
+
+.active::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #3192FF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-item.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 10px;
+    margin-inline: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.doctors-card {
+    background-image: linear-gradient(to right,
+            white 0% 40%,
+            rgba(49, 146, 255, 0.5));
+
+}
+
+.link-effect {
+    /* margin-block: 10px; */
+    list-style-type: none;
+    font-weight: 500;
+    transition: all 0.2s ease-in;
+    text-transform: capitalize;
+
+}
+
+.line-end::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom,
+            white 0% 20%,
+            rgba(49, 146, 255, 0.5) 20% 60%,
+            white);
+}
+
+.link-effect:hover {
+    color: rgb(49, 109, 255);
+    transform: translateX(20px);
+}
 
 .template-card {
     height: 320px;
@@ -42,4 +114,138 @@
 .template-title {
     margin-top: 14px;
     font-weight: 600;
+}
+
+
+
+
+/* contact-us header and breadcum */
+.page-header {
+    padding: 3% 0;
+    background: #f5f9ff;
+    background-image: url("../imgs/contactus-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3%;
+}
+
+.page-header h1 {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.house {
+    color: #3b82f6;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+/* Contact Us Form */
+.contact-section {
+    background: #fff;
+}
+
+.small-title {
+    color: #3b82f6;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Info Boxes */
+.info-box {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f9fbff;
+    margin-bottom: 15px;
+}
+
+.info-box .icon {
+    width: 45px;
+    height: 45px;
+    background-color: #e0edff;
+    color: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.info-box h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.info-box p {
+    margin: 0;
+    color: #555;
+}
+
+/* Form */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    height: 45px;
+}
+
+.contact-form textarea {
+    height: auto;
+}
+
+.btn-primary {
+    border-radius: 25px;
+}
+
+/* Footer */
+.li-footer {
+    accent-color: rgb(49, 109, 255);
+}
+
+.li-footer:hover {
+    color: rgb(49, 109, 255);
+    text-decoration: underline;
+
+}
+
+.li-footer:hover a {
+    color: rgb(49, 109, 255) !important;
+}
+
+.social-footer {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-footer:hover {
+    background-color: #3192FF;
+    color: white;
+}
+
+.social-footer span {
+    transition: all 0.2s;
+}
+
+.social-footer:hover span {
+    transform: rotateY(360deg);
 }
