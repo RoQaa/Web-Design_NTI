@@ -1,0 +1,45 @@
+.font-1 {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+/* body{
+    background-color: black;
+} */
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+
+.template-card {
+    height: 320px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+}
+
+.template-img {
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f5f7fa;
+}
+
+.template-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.template-title {
+    margin-top: 14px;
+    font-weight: 600;
+}
