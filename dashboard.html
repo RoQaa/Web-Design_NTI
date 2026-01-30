@@ -22,6 +22,7 @@
     <!-- Bootsrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- TODO: Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -435,43 +436,44 @@
                                     Invoices
                                 </a>
                             </li>
-                                <li>
+                            <li>
                                 <a href="#">
                                     <i class="bi bi-cash"></i>
                                     Payout Settings
                                 </a>
                             </li>
-                                 <li>
+                            <li>
                                 <a href="#">
                                     <i class="bi bi-chat-dots"></i>
-                                    Message
+                                    Messages
+                                    <span class="badge bg-warning">7</span>
                                 </a>
                             </li>
-                                 <li>
+                            <li>
                                 <a href="#">
                                     <i class="bi bi-substack"></i>
                                     Blog
                                 </a>
                             </li>
-                                 <li>
+                            <li>
                                 <a href="#">
                                     <i class="bi bi-gear"></i>
                                     Profile Settings
                                 </a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#">
                                     <i class="bi bi-shield-shaded"></i>
                                     Social Media
                                 </a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#">
                                     <i class="bi bi-key"></i>
                                     Change Password
                                 </a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="#">
                                     <i class="bi bi-box-arrow-left"></i>
                                     Logout
@@ -481,11 +483,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-6">
+
+                <div class="col-xl-3">
                     <div class="row g-4">
 
                         <!-- Stat Card -->
-                        <div class="col-md-6">
+                        <div class="col-md-11">
                             <div class="stat-list">
 
                                 <!-- Total Patient -->
@@ -531,7 +534,7 @@
                     </div>
 
                     <!-- Weekly Overview -->
-                    <div class="card mt-4 col-md-7">
+                    <div class="card mt-4 col-md-12 p-2">
                         <div class="card-body">
                             <div class="d-flex justify-content-between mb-3">
                                 <h6 class="fw-bold">Weekly Overview</h6>
@@ -540,26 +543,180 @@
                             <canvas id="weeklyChart"></canvas>
                         </div>
                     </div>
+                    <!-- Recent patient -->
+                    <div class="card mt-4 col-md-12 ">
+                        <div class="card-header d-flex justify-content-between bg-white align-items-center p-3 mb-3">
+                            <h6 class="fw-bold">Recent Patients</h6>
+                            <a href="#" style="font-weight: 600;">View All</a>
+                        </div>
+                        <div class="d-flex justify-content-evenly ">
+                            <div class="item rounded-2"
+                                style="background-color: #f5f7fb; width: 40%; padding:10px 0 0 10px;">
+                                <img src="imgs/users/1.jpg" alt=""
+                                    style="  width: 45px;height: 45px;border-radius: 8px;object-fit: cover; margin-bottom: 2%;">
+                                <div class="border-bottom border-1 py-2">
+                                    <h6 class="my-1">Adrian Marshall</h6>
+                                    <small class="text-primary">Patient ID : P0001</small>
+                                </div>
+                                <p>Last Appointment 15 Mar 2024.</p>
+
+                            </div>
+                            <div class="item   rounded-2"
+                                style="background-color: #f5f7fb; width: 40%; padding: 10px 0 0 10px;">
+                                <img src="imgs/users/2.jpg" alt=""
+                                    style="  width: 45px;height: 45px;border-radius: 8px;object-fit: cover; margin-bottom: 2%;">
+                                <div class="border-bottom border-1 py-2">
+                                    <h6 class="my-1">Kelly Stevens</h6>
+                                    <small class="text-primary">Patient ID : P0002</small>
+                                </div>
+                                <p>Last Appointment 15 Mar 2024.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clinics & Availability -->
+                    <div class="col-md-12 mt-4">
+                        <div class="dash-card">
+                            <div class="dash-card-header">
+                                <h6>Clinics & Availability</h6>
+                            </div>
+
+                            <div class="clinic-card">
+                                <div class="clinic-top">
+                                    <img src="imgs/clincs/imgi_33_clinic-02.jpg" alt="">
+                                    <div>
+                                        <h6>Sofi’s Clinic</h6>
+                                        <small>$900</small>
+                                    </div>
+                                </div>
+
+                                <div class="clinic-time">
+                                    <p>Tue : 07:00 AM - 09:00 PM</p>
+                                    <p>Wed : 07:00 AM - 09:00 PM</p>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+
+                            <div class="clinic-card">
+                                <div class="clinic-top">
+                                    <img src="imgs/clincs/imgi_34_clinic-01.jpg" alt="">
+                                    <div>
+                                        <h6>The Family Dentistry Clinic</h6>
+                                        <small>$600</small>
+                                    </div>
+                                </div>
+
+                                <div class="clinic-time">
+                                    <p>Sat : 07:00 AM - 09:00 PM</p>
+                                    <p>Tue : 07:00 AM - 09:00 PM</p>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <!-- FIXME: -->
-                <div class="col-xl-3">
-                    <div class="card appointment-card">
+
+                <div class="col-xl-6 ">
+                    <div class="card appointment-card col-xl-12">
                         <div class="card-header d-flex justify-content-between bg-white align-items-end ">
                             <h6 class="fw-bold">Appointment</h6>
                             <select class="form-select form-select-sm w-auto">
                                 <option>Last 7 Days</option>
                             </select>
                         </div>
-
                         <div class="card-body">
 
-                            <!-- Item -->
+                            <!-- Item 1 -->
                             <div class="appointment-item">
-                                <img src="imgs/patient.jpg">
-                                <div>
-                                    <small class="text-primary">#Apt0001</small>
-                                    <h6>Adrian Marshall</h6>
+
+                                <div class="d-flex align-items-center" style="width: 40%; gap: 20px;">
+                                    <img src="imgs/users/1.jpg">
+                                    <div>
+                                        <small class="text-primary">#Apt0001</small>
+                                        <h6>Adrian Marshall</h6>
+                                    </div>
+                                </div>
+                                <div class="mx-auto">
+                                    <h6 class="h6">11 Nov 2024 10.45 AM</h6>
                                     <span class="badge bg-primary">General</span>
+                                </div>
+                                <div class="actions">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle">✓</button>
+                                    <button class="btn btn-outline-danger btn-sm rounded-circle">✕</button>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="appointment-item">
+
+                                <div class="d-flex align-items-center" style="width: 40%; gap: 20px;">
+                                    <img src="imgs/users/2.jpg">
+                                    <div>
+                                        <small class="text-primary">#Apt0002</small>
+                                        <h6>Kelly Stevens</h6>
+                                    </div>
+                                </div>
+                                <div class="mx-auto">
+                                    <h6 class="h6">10 Nov 2024 11.00 AM</h6>
+                                    <span class="badge bg-primary">Clinic Consulting</span>
+                                </div>
+                                <div class="actions">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle">✓</button>
+                                    <button class="btn btn-outline-danger btn-sm rounded-circle">✕</button>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="appointment-item">
+
+                                <div class="d-flex align-items-center" style="width: 40%; gap: 20px;">
+                                    <img src="imgs/users/3.jpg">
+                                    <div>
+                                        <small class="text-primary">#Apt0003</small>
+                                        <h6>Samuel Anderson</h6>
+                                    </div>
+                                </div>
+                                <div class="mx-auto">
+                                    <h6 class="h6">03 Nov 2024 02.00 PM</h6>
+                                    <span class="badge bg-primary">General</span>
+                                </div>
+                                <div class="actions">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle">✓</button>
+                                    <button class="btn btn-outline-danger btn-sm rounded-circle">✕</button>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="appointment-item">
+
+                                <div class="d-flex align-items-center" style="width: 40%; gap: 20px;">
+                                    <img src="imgs/users/4.jpg">
+                                    <div>
+                                        <small class="text-primary">#Apt0004</small>
+                                        <h6>Samuel Anderson</h6>
+                                    </div>
+                                </div>
+                                <div class="mx-auto">
+                                    <h6 class="h6">01 Nov 2024 04.00 PM</h6>
+                                    <span class="badge bg-primary">Clinic Consulting</span>
+                                </div>
+                                <div class="actions">
+                                    <button class="btn btn-outline-success btn-sm rounded-circle">✓</button>
+                                    <button class="btn btn-outline-danger btn-sm rounded-circle">✕</button>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="appointment-item">
+
+                                <div class="d-flex align-items-center" style="width: 40%; gap: 20px;">
+                                    <img src="imgs/users/5.jpg">
+                                    <div>
+                                        <small class="text-primary">#Apt0005</small>
+                                        <h6>Robert Hutchinson</h6>
+                                    </div>
+                                </div>
+                                <div class="mx-auto">
+                                    <h6 class="h6">28 Oct 2024 05.30 PM</h6>
+                                    <span class="badge bg-primary">General </span>
                                 </div>
                                 <div class="actions">
                                     <button class="btn btn-outline-success btn-sm rounded-circle">✓</button>
@@ -571,23 +728,213 @@
                     </div>
 
                     <!-- Upcoming -->
-                    <div class="upcoming-card mt-4">
+                    <div class="upcoming-card mt-4 col-xl-12 ">
                         <h6 class="fw-bold text-white">Upcoming Appointment</h6>
 
-                        <div class="d-flex align-items-center gap-3 mt-3">
-                            <img src="imgs/doctor-profile-img.webp" class="rounded-circle" width="50">
-                            <div class="text-white">
-                                <small>#Apt0001</small>
-                                <p class="mb-0 fw-semibold">Adrian Marshall</p>
+                        <div
+                            class="d-flex align-items-center justify-content-between mt-3  border-bottom border-white pb-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="imgs/users/1.jpg" class="rounded-2" width="50">
+                                <div class="text-white">
+                                    <small>#Apt0001</small>
+                                    <p class="mb-0 fw-semibold">Adrian Marshall</p>
+                                </div>
+                            </div>
+                            <div class="text-white mx-auto">
+                                <p class="mb-0 fw-semibold">General visit</p>
+                                <p class="mb-0 fw-semibold">Today, 10:45 AM</p>
                             </div>
                         </div>
 
-                        <div class="mt-3">
-                            <button class="btn btn-light btn-sm">Chat Now</button>
-                            <button class="btn btn-outline-light btn-sm">Start Appointment</button>
+                        <div class="mt-3 text-white d-flex justify-content-between">
+                            <h5><i class="bi bi-camera-video-fill"></i> Video Appointment</h5>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-dark btn-sm rounded-pill"
+                                    style="font-size: 1rem; font-weight:600;">Chat Now</button>
+                                <button class="btn btn-outline-dark btn-sm rounded-pill"
+                                    style="font-size: 1rem; font-weight:600;">Start Appointment</button>
+                            </div>
+
                         </div>
                     </div>
+                    <!-- Invoices -->
+                    <div class="card appointment-card col-xl-12">
+                        <div class="card-header d-flex justify-content-between bg-white align-items-center p-3">
+                            <h6 class="fw-bold">Recent Invoices</h6>
+                            <a href="#" style="font-weight: 600;">View All</a>
+                        </div>
+                        <div class="card-body">
+
+                            <!-- Item 1 -->
+                            <div class="appointment-item">
+                                <div class="d-flex align-items-center" style="width: 25%; gap: 20px;">
+                                    <img src="imgs/users/1.jpg">
+                                    <div>
+                                        <h6 class="m-0">Adrian</h6>
+                                        <small class="text-primary">#Apt0001</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="m-0">Paid On</p>
+                                    <h6 class="h6">11 Nov 2024</h6>
+                                </div>
+                                <div>
+                                    <p class="m-0">Amount</p>
+                                    <h6 class="h6">$450</h6>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-primary btn-sm rounded-circle"><i
+                                            class="bi bi-eye-fill"></i></button>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="appointment-item">
+                                <div class="d-flex align-items-center" style="width: 25%; gap: 20px;">
+                                    <img src="imgs/users/2.jpg">
+                                    <div>
+                                        <h6 class="m-0">Kelly</h6>
+                                        <small class="text-primary">#Apt0002</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="m-0">Paid On</p>
+                                    <h6 class="h6">10 Nov 2024</h6>
+                                </div>
+                                <div>
+                                    <p class="m-0">Amount</p>
+                                    <h6 class="h6">$500</h6>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-primary btn-sm rounded-circle"><i
+                                            class="bi bi-eye-fill"></i></button>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="appointment-item">
+                                <div class="d-flex align-items-center" style="width: 25%; gap: 20px;">
+                                    <img src="imgs/users/3.jpg">
+                                    <div>
+                                        <h6 class="m-0">Samuel</h6>
+                                        <small class="text-primary">#Apt0003</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="m-0">Paid On</p>
+                                    <h6 class="h6">03 Nov 2024</h6>
+                                </div>
+                                <div>
+                                    <p class="m-0">Amount</p>
+                                    <h6 class="h6">$320</h6>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-primary btn-sm rounded-circle"><i
+                                            class="bi bi-eye-fill"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="appointment-item">
+                                <div class="d-flex align-items-center" style="width: 25%; gap: 20px;">
+                                    <img src="imgs/users/4.jpg">
+                                    <div>
+                                        <h6 class="m-0">Catherine</h6>
+                                        <small class="text-primary">#Apt0004</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="m-0">Paid On</p>
+                                    <h6 class="h6">01 Nov 2024</h6>
+                                </div>
+                                <div>
+                                    <p class="m-0">Amount</p>
+                                    <h6 class="h6">$240</h6>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-primary btn-sm rounded-circle"><i
+                                            class="bi bi-eye-fill"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="appointment-item">
+                                <div class="d-flex align-items-center" style="width: 25%; gap: 20px;">
+                                    <img src="imgs/users/5.jpg">
+                                    <div>
+                                        <h6 class="m-0">Robert</h6>
+                                        <small class="text-primary">#Apt0005</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="m-0">Paid On</p>
+                                    <h6 class="h6">28 Oct 2024</h6>
+                                </div>
+                                <div>
+                                    <p class="m-0">Amount</p>
+                                    <h6 class="h6">$380</h6>
+                                </div>
+                                <div>
+                                    <button class="btn btn-outline-primary btn-sm rounded-circle"><i
+                                            class="bi bi-eye-fill"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="col-md-12 mt-4">
+                        <div class="dash-card">
+                            <div class="dash-card-header">
+                                <h6>Notifications</h6>
+                                <a href="#">View All</a>
+                            </div>
+
+                            <ul class="notification-list">
+                                <li>
+                                    <div class="icon purple">
+                                        <i class="fa-solid fa-bell"></i>
+                                    </div>
+                                    <div>
+                                        <p>Booking Confirmed on <b>21 Mar 2024</b> 10:30 AM</p>
+                                        <small>Just Now</small>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="icon blue">
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div>
+                                        <p>You have a <b>New Review</b> for your Appointment</p>
+                                        <small>5 Days ago</small>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="icon red">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </div>
+                                    <div>
+                                        <p>You have Appointment with <b>Ahmed</b> by 01:20 PM</p>
+                                        <small>12:55 PM</small>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="icon yellow">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                    </div>
+                                    <div>
+                                        <p>Sent an amount of <b>$200</b> for an Appointment</p>
+                                        <small>2 Days ago</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
