@@ -3,8 +3,8 @@
     font-weight: 500 !important;
 }
 
-body {
-    width: 100%;
+a {
+    text-decoration: none;
 }
 
 .navbar {
@@ -863,3 +863,124 @@ body {
     background: #0e9384;
 }
 
+/* ==========================================================================
+   SUPPORT SECTION
+   ========================================================================== */
+.support-section {
+    margin: 12rem 0 0 0;
+    padding-bottom: 3rem;
+}
+
+.special-h6 {
+    width: fit-content;
+    position: relative;
+}
+
+.special-h6::before,
+.special-h6::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.special-h6::before {
+    left: 7%;
+}
+
+.special-h6::after {
+    right: 7%;
+}
+
+.support-cards .support-card {
+    width: 230px;
+}
+
+.support-cards .support-card .img-wrapper {
+    overflow: hidden;
+    border-radius: 10%;
+    height: 200px;
+    position: relative;
+}
+
+.support-cards .support-card .img-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    opacity: 0.4;
+    transition: opacity 0.5s;
+}
+
+.support-cards .support-card:hover .img-wrapper::before {
+    opacity: 1;
+}
+
+.support-cards .support-card .support-card-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.support-cards .support-card:hover .support-card-icon {
+    background-color: #0066e9;
+}
+
+.support-cards .support-card:hover .support-card-icon img {
+    transform: rotateY(720deg);
+    transition: transform 0.8s;
+}
+
+.support-cards .support-card h4 {
+    transition: color 0.3s;
+}
+
+.support-cards .support-card h4:hover {
+    color: #0066e9;
+}
+
+/* ==========================================================================
+   SLICK CAROUSEL CUSTOM ARROWS
+   ========================================================================== */
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.custom-arrow {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    margin-left: 15px;
+    transition: all 0.5s;
+}
+
+.custom-arrow i {
+    color: #316dff;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+
+.custom-arrow:hover {
+    background: #316dff;
+}
+
+.custom-arrow:hover i {
+    color: white;
+}
