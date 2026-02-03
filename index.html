@@ -21,7 +21,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Bootsrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- TODO: Fontawesome CSS -->
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -332,6 +337,120 @@
             </div>
         </div>
     </nav>
+    <!-- Hero landing section -->
+    <section class="landing position-relative">
+        <div class="landing-inner container h-100">
+            <div class="row h-100 align-items-center">
+
+                <div class="col-7">
+                    <div class="rating-box bg-white px-4 py-2 rounded-pill d-flex align-items-center gap-3">
+                        <div class="avatar-stack">
+                            <img src="imgs/index/imgi_22_doctor-thumb-22.jpg" />
+                            <img src="imgs/index/imgi_23_doctor-thumb-23.jpg" />
+                            <img src="imgs/index/imgi_24_doctor-thumb-24.jpg" />
+                        </div>
+                        <div>
+                            <p class="fw-semibold mb-1">5K+ Appointments</p>
+                            <ul class="stars d-flex gap-1 mb-0">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <span class="ms-2 fw-semibold text-muted">5.0 Ratings</span>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h1 class="landing-title text-white fw-bold mt-4 mb-5">
+                        Discover Health: Find Your Trusted
+                        <span class="media-pill position-relative d-inline-block align-middle">
+                            <img src="imgs/index/imgi_25_video.svg" class="media-icon position-absolute">
+                        </span>
+                        Doctors Today
+                    </h1>
+
+                    <div class="search-box bg-white rounded-pill d-flex align-items-center gap-3 px-3 py-2">
+                        <div class="d-flex align-items-center border-end pe-3">
+                            <i class="fa-solid fa-layer-group text-primary me-2"></i>
+                            <select class="search-select">
+                                <option>Select speciality</option>
+                                <option>Cardiology</option>
+                                <option>Neurology</option>
+                                <option>Dermatology</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex align-items-center flex-grow-1">
+                            <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                            <input class="search-input w-100" placeholder="Search for medical procedures, hospitals">
+                        </div>
+
+                        <button class="action-btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="col-5 position-relative align-self-end">
+                    <img src="imgs/index/banner-doctor.svg" class="doctor-img">
+
+                    <div class="call-wrapper position-absolute">
+                        <div class="call-controls d-flex align-items-center gap-3 px-4">
+                            <i class="fa-solid fa-video"></i>
+                            <i class="fa-solid fa-phone-slash phone-btn"></i>
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="landing-bg">
+            <img src="imgs/index/banner-element-01.webp" class="bg-left">
+            <img src="imgs/index/banner-element-02.webp" class="bg-right">
+        </div>
+
+        <div class="features-bar container-fluid bg-white position-absolute py-4">
+            <div class="container d-flex justify-content-between">
+
+                <div class="feature-item">
+                    <span class="feature-icon bg-sky"><img src="imgs/index/list-icon-01.svg"></span>
+                    <p>Book Appointment</p>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon bg-blue"><img src="imgs/index/list-icon-02.svg"></span>
+                    <p>Talk to Doctors</p>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon bg-pink"><img src="imgs/index/list-icon-03.svg"></span>
+                    <p>Hospitals & Clinics</p>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon bg-cyan"><img src="imgs/index/list-icon-04.svg"></span>
+                    <p>Healthcare</p>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon bg-purple"><img src="imgs/index/list-icon-05.svg"></span>
+                    <p>Medicine & Supplies</p>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon bg-orange"><img src="imgs/index/list-icon-06.svg"></span>
+                    <p>Lab Testing</p>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon bg-teal"><img src="imgs/index/list-icon-07.svg"></span>
+                    <p>Home Care</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
 
@@ -453,7 +572,8 @@
 
 
 
-
+    <!-- Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

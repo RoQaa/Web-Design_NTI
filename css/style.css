@@ -684,3 +684,182 @@ body {
     object-fit: cover;
     border-radius: 8px;
 }
+
+
+/* Index */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.landing {
+    height: 85vh;
+    background: linear-gradient(180deg, #016be7, #0066e9 50%, #96e8fe 88%, #b1fcf7);
+    position: relative;
+    padding-top: 50px;
+}
+
+.landing-title {
+    font-size: 56px;
+}
+
+.rating-box {
+    width: fit-content;
+}
+
+.avatar-stack img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: -18px;
+    transition: transform 0.4s;
+}
+
+.avatar-stack img:hover {
+    transform: translateY(-3px);
+    z-index: 2;
+}
+
+.stars {
+    list-style: none;
+    padding: 0;
+    color: #facc15;
+}
+
+.media-pill {
+    width: 120px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+
+.media-icon {
+    width: 50%;
+    bottom: 30%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.search-box select,
+.search-box input {
+    border: none;
+    outline: none;
+}
+
+.action-btn {
+    background: linear-gradient(90deg, #2c77ff, #07b5ff);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0.7rem 1.5rem;
+}
+
+.doctor-img {
+    width: 90%;
+}
+
+.call-wrapper {
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.call-controls i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.phone-btn {
+    width: 55px;
+    height: 55px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-bg .bg-left {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.landing-bg .bg-right {
+    position: absolute;
+    bottom: -140px;
+    right: 0;
+}
+
+.features-bar {
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    border-radius: 16px;
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-item p {
+    transition: color 0.4s;
+}
+
+.feature-item:hover p {
+    color: #0066e9;
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.feature-icon img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.feature-item:hover .feature-icon img {
+    transform: rotateY(360deg);
+}
+
+.bg-sky {
+    background: #02bfff;
+}
+
+.bg-blue {
+    background: #316dff;
+}
+
+.bg-pink {
+    background: #dd2590;
+}
+
+.bg-cyan {
+    background: #06aed4;
+}
+
+.bg-purple {
+    background: #6938ef;
+}
+
+.bg-orange {
+    background: #e04f16;
+}
+
+.bg-teal {
+    background: #0e9384;
+}
+
